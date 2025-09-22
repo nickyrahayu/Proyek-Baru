@@ -1,0 +1,32 @@
+1. Buka terminal.
+2. Perbarui daftar paket sistem dan upgrade:
+   sudo apt update && sudo apt upgrade ‑y
+
+3. Import kunci publik (GPG key) MongoDB:
+   curl ‑fsSL https://www.mongodb.org/static/pgp/server‑8.0.asc | \
+   sudo gpg ‑o /usr/share/keyrings/mongodb-server‑8.0.gpg --dearmor
+
+4. Tambahkan repository resmi MongoDB untuk Ubuntu Noble:
+   echo "deb [ arch=amd64,arm64 signed-by=/usr/share/keyrings/mongodb-server‑8.0.gpg ] \
+   https://repo.mongodb.org/apt/ubuntu noble/mongodb-org/8.0 multiverse" | \
+   sudo tee /etc/apt/sources.list.d/mongodb-org-8.0.list
+
+5. Perbarui kembali daftar paket:
+   sudo apt update
+
+6. Instal MongoDB Community Edition:
+   sudo apt install ‑y mongodb-org
+   7. Instal MongoDB Community Edition:
+   sudo apt install ‑y mongodb-org
+
+7. Jalankan layanan MongoDB:
+   sudo systemctl start mongod
+
+8. Aktifkan agar layanan MongoDB otomatis berjalan saat boot:
+   sudo systemctl enable mongod
+
+9. Periksa status layanan untuk memastikan MongoDB berjalan dengan benar:
+    sudo systemctl status mongod
+
+10. Masuk ke shell MongoDB untuk pengujian:
+    mongosh dan MongoDB siap digunakan.
