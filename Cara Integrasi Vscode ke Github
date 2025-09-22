@@ -3,20 +3,18 @@
 1. Buka terminal, lalu pastikan Git telah terinstal dengan menjalankan perintah:
    git --version
 
-2. Konfigurasi identitas Git dengan perintah berikut:
-   git config --global user.name "Nama"
-   git config --global user.email "email"
+2. Konfigurasi identitas Git
 
 3. Buat SSH key baru menggunakan perintah:
-   ssh-keygen -t ed25519 -C "email"
+   ssh-keygen -t  ed25519 -C "email"
 
 4. Aktifkan ssh-agent dan tambahkan SSH key:
    eval "$(ssh-agent -s)"
-   ssh-add ~/.ssh/id_ed25519
+   ssh-add ~/.ssh/ id_ed25519
 
 5. Salin SSH key ke clipboard
 
-6. Buka situs https://github.com dan login ke akun GitHub.
+6. Buka situs https://github.com dan login ke akun GitHub
 
 7. Masuk ke menu Settings, SSH and GPG keys, lalu pilih New SSH key.
 
@@ -25,7 +23,7 @@
 9. Buka VSCode. Di dalam VSCode, buka menu Terminal lalu pilih New Terminal.
 
 10. Jalankan perintah berikut untuk meng-clone repositori GitHub menggunakan SSH:
-    git clone git@github.com:username/nama-repo.git
+    git clone git@github.com:username/ nama-repo.git
 
 11. Setelah proses clone selesai, buka folder repositori tersebut di VSCode.
 
