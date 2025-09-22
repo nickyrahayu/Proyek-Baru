@@ -17,16 +17,7 @@ Langkah-langkah Install MariaDB di Linux Mint:
 6. Aktifkan MariaDB saat boot:
    sudo systemctl enable mariadb
 
-7. Jalankan konfigurasi keamanan:
-   sudo mysql_secure_installation
-
-   - Atur password root
-   - Hapus user anonim
-   - Nonaktifkan login root jarak jauh
-   - Hapus database test
-   - Reload privileges
-
-8. Akses MariaDB:
+7. Akses MariaDB:
    sudo mariadB 
 
 Selesai. MariaDB siap digunakan.
